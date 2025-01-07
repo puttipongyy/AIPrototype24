@@ -6,7 +6,7 @@ def parse_input():
 
     parser.add_argument(
         '--bd',
-        type=int,
+        type=str,
         required=True,
         # default=7,
         help= 'input for birthday of the user format (ddmmyyyy).'     
@@ -27,20 +27,20 @@ def printHello(who):
     print(f"Hello world, {who}!!")
 
 def cal_todayVbd(bd):
-    date_format = "%m%d%Y"
-
+    date_format = "%d%m%Y"
     bday = datetime.strptime(bd,date_format)
-    # b = datetime.strptime('9/26/2008', date_format)
+    # print(type(bday))
     # print(delta.days)
-    td = datetime.today().strftime(date_format) 
-    delta = td - bday  
-    return delta
+    td = datetime.today() 
+    # print(type(td))
+    delta =   td - bday  
+    return delta.days
 
 if __name__=="__main__":
     input_v = parse_input()
     print("this is my first .py file.")
     printHello(input_v.name)
-    print(f"your birthday is {cal_todayVbd(input_v.bd)} from today")
+    print(f"you have survived for {cal_todayVbd(input_v.bd)} days")
 
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Research Page</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1 {
+                text-align: center;
+                color: #005ea6;
+            }
+            h2 {
+                color: #333;
+            }
+            ul {
+                list-style-type: square;
+                margin: 20px 0;
+                padding: 0;
+            }
+            li {
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Faculty Research Page</h1>
+        <h2>Research by {{ faculty }}</h2>
+        <ul>
+            {% for project in research_projects %}
+                <li>{{ project }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+    </html>

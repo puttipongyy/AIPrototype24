@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cookie-btn {
+            padding: 20px;
+            font-size: 20px;
+            background-color: #f0a500;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .cookie-btn:hover {
+            background-color: #d98e00;
+        }
+        .reset-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d9534f;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .reset-btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cookie Clicker</h1>
+    <h2>Cookies: {{ cookies }}</h2>
+    <form action="/click" method="get">
+        <button class="cookie-btn">Click Me!</button>
+    </form>
+    <form action="/reset" method="get">
+        <button class="reset-btn">Reset</button>
+    </form>
+</body>
+</html>

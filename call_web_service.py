@@ -10,10 +10,10 @@ url = 'http://127.0.0.1:5000/simpleAPI'
 #          'msg':'puttipong'} #json
 
 myobj = {
-    'username': 'puttipong',  
+    'username': 'puttipongy',  
     'msg': 'Hello, Boku wa omom desu!!'  
 }
 
-
+# apt pt apt pt
 x = requests.post(url, data = json.dumps(myobj)) #requests ใช้เรียก // data // รับ output จาก webb
      

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, render_template_string
 import random
+import json
 
 app = Flask(__name__)
 
@@ -342,5 +343,70 @@ def helloSTAThtml():
     </html>
     """
 
-if __name__ == "__main__":   # run code 
+##api
+# @app.route('/simpleAPI',methods=['POST']) 
+# def web_service_API():
+
+#     payload = request.data.decode("utf-8")
+#     inmessage = json.loads(payload) # ทำ json
+
+#     print(inmessage)
+    
+    
+#     json_data = json.dumps({'y': 'received!'}) # ส่งกลับไปว่าได้รับเเล้ววว
+#     return json_data
+
+# @app.route('/simpleAPI',methods=['POST']) 
+# def web_service_API():
+#     # รับข้อมูล JSON จาก request
+#     payload = request.data.decode("utf-8")
+#     inmessage = json.loads(payload)
+    
+#     # ดึง IP ของผู้เรียกใช้งาน
+#     client_ip = request.remote_addr  # หรือจะใช้ request.headers.get('X-Forwarded-For', request.remote_addr) ก็ได้
+
+#     # ลองพิมพ์ข้อมูลพร้อม IP ลง console
+#     print("Received from IP:", client_ip)
+#     print("Message:", inmessage['msg'])
+
+#     # ส่งกลับ JSON ที่มี IP ด้วย
+#     json_data = json.dumps({
+#         'client_ip': client_ip,
+#         'y': 'received!'
+#     })
+#     return json_data
+
+@app.route('/simpleAPI', methods=['POST'])
+def web_service_API():
+    # ดึงข้อมูลจาก request
+    client_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    user_agent = request.headers.get('User-Agent')
+    referrer = request.referrer
+    request_method = request.method
+    request_url = request.url
+    headers = dict(request.headers)
+    body_data = request.get_json(silent=True)  # JSON payload ถ้ามี
+    cookies = request.cookies  # Cookie ที่แนบมา
+    
+    # รวมข้อมูลทั้งหมดใน response
+    response_data = {
+        "client_ip": client_ip,
+        "user_agent": user_agent,
+        "referrer": referrer,
+        "request_method": request_method,
+        "request_url": request_url,
+        "headers": headers,
+        "body_data": body_data,
+        "cookies": cookies
+    }
+
+    # แสดงข้อมูลใน console
+    print(json.dumps(response_data, indent=4))
+
+    return json.dumps(response_data, indent=4)
+
+
+
+if __name__ == "__main__":   # run code
+    # app.run(host='0.0.0.0',debug=True,port=5001) #host='0.0.0.0' = run on internet ,port=5001 
     app.run()

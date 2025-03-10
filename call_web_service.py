@@ -14,6 +14,6 @@ myobj = {
     'msg': 'Hello, Boku wa omom desu!!'  
 }
 
-# apt pt apt pt
+# apt pt pt apt pt pt
 x = requests.post(url, data = json.dumps(myobj)) #requests ใช้เรียก // data // รับ output จาก webb
      

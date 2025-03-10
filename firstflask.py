@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, render_template_string
 import random
 import json
+from flask import jsonify
+
 
 app = Flask(__name__)
+
+chat_history = []
 
 @app.route("/") 
 def helloworld():
@@ -378,32 +382,28 @@ def helloSTAThtml():
 
 @app.route('/simpleAPI', methods=['POST'])
 def web_service_API():
-    # ดึงข้อมูลจาก request
+
+    payload = request.data.decode("utf-8")
+    inmessage = json.loads(payload)
+
+    # ดึงข้อมูลจาก JSON payload
+    username = inmessage.get('username', 'Anonymous')
+    message = inmessage.get('msg', '')
+
+    # ดึง IP ของผู้ส่ง
     client_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
-    user_agent = request.headers.get('User-Agent')
-    referrer = request.referrer
-    request_method = request.method
-    request_url = request.url
-    headers = dict(request.headers)
-    body_data = request.get_json(silent=True)  # JSON payload ถ้ามี
-    cookies = request.cookies  # Cookie ที่แนบมา
-    
-    # รวมข้อมูลทั้งหมดใน response
-    response_data = {
-        "client_ip": client_ip,
-        "user_agent": user_agent,
-        "referrer": referrer,
-        "request_method": request_method,
-        "request_url": request_url,
-        "headers": headers,
-        "body_data": body_data,
-        "cookies": cookies
-    }
 
-    # แสดงข้อมูลใน console
-    print(json.dumps(response_data, indent=4))
+    # บันทึกข้อความลงประวัติแชท
+    chat_entry = f"[{client_ip}] {username}: {message}"
+    chat_history.append(chat_entry)
 
-    return json.dumps(response_data, indent=4)
+    # แสดงประวัติแชททั้งหมดใน console
+    print("\n===== Chat History =====")
+    for chat in chat_history:
+        print(chat)
+    print("========================\n")
+
+    return jsonify({'status': 'received', 'client_ip': client_ip, 'username': username, 'message': message})
 
 
 

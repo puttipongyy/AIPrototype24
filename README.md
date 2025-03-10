@@ -2,7 +2,7 @@
 AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
 
 Chapter 1 : 
-- ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line
+ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line
 - การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน
 
 Chapter 2 : 

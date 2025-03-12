@@ -1,6 +1,6 @@
 # AIPrototype24
 AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
-- [WebPage Project](https://puttipongyy.github.io/WebPageProject/) [Code](https://github.com/puttipongyy/WebPageProject.git)
+- [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) [Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
 - [WebApp](http://20.205.16.95:5006/)
 <details>
   <summary>Chapter 1 : 

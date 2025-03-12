@@ -1,5 +1,7 @@
 # AIPrototype24
 AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
+[WebPage Project](https://puttipongyy.github.io/WebPageProject/)
+[WebApp](http://20.205.16.95:5006/)
 
 Chapter 1 : 
 ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line

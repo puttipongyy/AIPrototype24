@@ -1,15 +1,22 @@
 # AIPrototype24
 AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
-- [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) [Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
-- [WebApp](http://20.205.16.95:5006/)
+
+- [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) <tr> [🐛 Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
+- [WebApp 🤯](http://20.205.16.95:5006/)
+ ## HOMEWORK
+Homework 1 [first python main 🐍](https://github.com/puttipongyy/AIPrototype24/blob/main/myfirstpy.py) <br>
+Homework 2 [firstflask 📬:](https://github.com/puttipongyy/AIPrototype24/blob/main/firstflask.py) & [call_web_service 📧:](https://github.com/puttipongyy/AIPrototype24/blob/main/call_web_service.py)
+
+
+ ## Content
 <details>
   <summary>Chapter 1 : 
 ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line</summary>
   
   <details>
-  === <summary>การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน</summary>
+  <summary>การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน</summary>
   1. ```python```
-</details>
+  </details>
 </details>
 
 Chapter 1 : 
@@ -56,5 +63,6 @@ Chapter 7 :
 
 Chapter 8 : 
 - การเรียนรู้เชิงลึก (Deep Learning)
-
-## Ubuntu command line
+<>
+## <summary>Ubuntu command line </summary>
+  get start with linux 🤯

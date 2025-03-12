@@ -3,9 +3,13 @@ AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
 - [WebPage Project](https://puttipongyy.github.io/WebPageProject/)
 - [WebApp](http://20.205.16.95:5006/)
 <details>
-  <summary>หัวข้อ</summary>
+  <summary>Chapter 1 : 
+ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line</summary>
   
-  เนื้อหาที่คุณต้องการแสดงเมื่อคลิกที่หัวข้อนี้
+  <details>
+  <summary>การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน</summary>
+  1. ```python```
+</details>
 </details>
 
 Chapter 1 : 

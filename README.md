@@ -3,7 +3,7 @@ SC664401 Prototyping for Artificial Intelligence and Machine Learning System <br
 การสร้างต้นแบบสำหรับระบบปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง <br>
 By Puttipong Yangnork  ID:643021268-1
 
-- [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) <tr> [🐛 Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
+- [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) <> [🐛 Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
 - [WebApp 🤯](http://20.205.16.95:5006/)
  ## HOMEWORK
 Homework 1 [first python main 🐍](https://github.com/puttipongyy/AIPrototype24/blob/main/myfirstpy.py) <br>

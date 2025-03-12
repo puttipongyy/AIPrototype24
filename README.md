@@ -7,7 +7,7 @@ AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
 ความรู้เบื้องต้นเกี่ยวกับ Linux Command Line</summary>
   
   <details>
-  <summary>การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน</summary>
+  === <summary>การใช้งาน Ubuntu ด้วยคําสั่ง พื้นฐาน</summary>
   1. ```python```
 </details>
 </details>

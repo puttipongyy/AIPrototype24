@@ -1,4 +1,6 @@
 # AIPrototype24
+SC664401 Prototyping for Artificial Intelligence and Machine Learning System
+การสร้างต้นแบบสำหรับระบบปัญญาประดิษฐ์และการเรียนรู้ของเครื่อง
 AI Prototype 2024 Puttipong Yangnork  ID:643021268-1
 
 - [WebPageProject 😅](https://puttipongyy.github.io/WebPageProject/) <tr> [🐛 Code 🐛](https://github.com/puttipongyy/WebPageProject.git)
